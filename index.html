@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>acedened</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" charset="utf-8">
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="line in lines">
+          <span v-if="line.isPrompted" class="prompt"></span>
+          {{{ line.text }}}
+        </li>
+      </ul>
+      <div id="new-line">
+        <span class="prompt"></span>&nbsp;
+        <input v-model="input" v-on:keyup.enter="enter" v-on:keyup.up="previousCommand" spellcheck="false">
+      </div>
+    </div>
+  </body>
+</html>

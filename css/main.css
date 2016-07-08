@@ -1,0 +1,44 @@
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans+Mono';
+
+body {
+  background: black;
+  color: #CCC;
+  font-family: "Droid Sans Mono", monospace;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.prompt:before, input:before {
+  content: '$> ';
+  color: #66e683;
+}
+
+a:before {
+  content: '* ';
+  color: #CCC;
+}
+
+a {
+  color: #75a4d6;
+  display: block;
+  text-decoration: none;
+}
+
+input {
+  background: inherit;
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+  flex: 1;
+  cursor: default;
+  padding: 0;
+}
+
+#new-line {
+  display: flex;
+  align-content: stretch;
+}
