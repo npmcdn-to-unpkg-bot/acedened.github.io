@@ -37,13 +37,13 @@ window.onload = function() {
             },
 
             projects: function() {
-                this.write('<a href="#">The Chan</a>', false, true)
-                this.write('<a href="#">clojure-vk</a>', false, true)
+                this.write('<a href="http://acedened.github.io/TheChan/">The Chan</a>', false, true)
+                this.write('<a href="https://github.com/acedened/clojure-vk">clojure-vk</a>', false, true)
             },
 
             links: function() {
-                this.write('<a href="#">GitHub</a>', false, true)
-                this.write('<a href="#">Contact me</a>', false, true)
+                this.write('<a href="https://github.com/acedened">GitHub</a>', false, true)
+                this.write('<a href="mailto:acedened@outlook.com">Contact me</a>', false, true)
             },
 
             help: function() {
