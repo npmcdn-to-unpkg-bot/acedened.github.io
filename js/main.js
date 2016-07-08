@@ -33,7 +33,7 @@ window.onload = function() {
             about: function() {
                 this.write('Vadim Novoseltsev (acedened)')
                 this.write('Software developer')
-                this.write('C# (UWP, WPF, WinForms)')
+                this.write('C# (UWP, WPF, WinForms), Clojure')
             },
 
             projects: function() {
