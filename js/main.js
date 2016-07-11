@@ -9,9 +9,7 @@ window.onload = function() {
         },
 
         methods: {
-            write: function(text, prompted, raw) {
-                if (!raw)
-                    text = text.replace(/ /g, '\u00a0')
+            write: function(text, prompted) {
                 this.lines.push({
                     text: text,
                     isPrompted: prompted
@@ -37,13 +35,13 @@ window.onload = function() {
             },
 
             projects: function() {
-                this.write('<a href="http://acedened.github.io/TheChan/">The Chan</a>', false, true)
-                this.write('<a href="https://github.com/acedened/clojure-vk">clojure-vk</a>', false, true)
+                this.write('<a href="http://acedened.github.io/TheChan/">The Chan</a>')
+                this.write('<a href="https://github.com/acedened/clojure-vk">clojure-vk</a>')
             },
 
             links: function() {
-                this.write('<a href="https://github.com/acedened">GitHub</a>', false, true)
-                this.write('<a href="mailto:acedened@outlook.com">Contact me</a>', false, true)
+                this.write('<a href="https://github.com/acedened">GitHub</a>')
+                this.write('<a href="mailto:acedened@outlook.com">Contact me</a>')
             },
 
             help: function() {
